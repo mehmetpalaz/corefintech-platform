@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\CoreFintech.Tenant\CoreFintech.Tenant\CoreFintech.Tenant.csproj" />
   </ItemGroup>
 
 </Project>

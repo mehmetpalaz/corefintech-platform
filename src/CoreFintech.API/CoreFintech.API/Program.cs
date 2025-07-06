@@ -1,3 +1,6 @@
+using CoreFintech.Tenant;
+using CoreFintech.Tenant.Abstractions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Register Services
+builder.Services.AddScoped<ITenantContext, TenantContext>();
+
 
 var app = builder.Build();
 
@@ -21,5 +28,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseMiddleware<TenantContextMiddleware>();
 
 app.Run();
