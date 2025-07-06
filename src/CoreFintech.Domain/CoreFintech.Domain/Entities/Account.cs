@@ -11,7 +11,7 @@ namespace CoreFintech.Domain.Entities
         public decimal Balance { get; private set; } = 0;
 
         private Account() { }
-        public Account(Guid id, string iban, decimal balance, Currency currency, Guid customerId)
+        internal Account(Guid id, string iban, decimal balance, Currency currency, Guid customerId)
         {
             Id = id;
             Balance = balance;

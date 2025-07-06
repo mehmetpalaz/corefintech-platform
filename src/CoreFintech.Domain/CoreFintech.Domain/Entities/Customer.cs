@@ -1,4 +1,6 @@
-﻿namespace CoreFintech.Domain.Entities
+﻿using CoreFintech.Domain.ValueObjects;
+
+namespace CoreFintech.Domain.Entities
 {
     public class Customer
     {
@@ -18,9 +20,11 @@
             Email = email;
         }
 
-        public void AddAccount(Account account)
+        public Account CreateAccount(string iban, Currency currency, decimal balance)
         {
+            var account = new Account(Guid.NewGuid(), iban,balance, currency, this.Id);
             _accounts.Add(account);
+            return account;
         }
     }
 }
