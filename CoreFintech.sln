@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFintech.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFintech.Messaging", "src\CoreFintech.Messaging\CoreFintech.Messaging.csproj", "{59971252-93C1-446A-BC6C-8D4FFE44121B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFintech.SharedKernel", "CoreFintech.SharedKernel\CoreFintech.SharedKernel\CoreFintech.SharedKernel.csproj", "{8177DEB2-040F-48AF-A6C3-691037090DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFintech.SharedKernel", "src\CoreFintech.SharedKernel\CoreFintech.SharedKernel\CoreFintech.SharedKernel.csproj", "{8177DEB2-040F-48AF-A6C3-691037090DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFintech.Tenant", "CoreFintech.Tenant\CoreFintech.Tenant\CoreFintech.Tenant.csproj", "{FEFA0E2F-B1C8-40BF-A5B0-D646C8BEED86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreFintech.Tenant", "src\CoreFintech.Tenant\CoreFintech.Tenant\CoreFintech.Tenant.csproj", "{FEFA0E2F-B1C8-40BF-A5B0-D646C8BEED86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
