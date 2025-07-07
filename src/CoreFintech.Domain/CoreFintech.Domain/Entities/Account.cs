@@ -8,7 +8,7 @@ namespace CoreFintech.Domain.Entities
         public Guid Id { get; set; }
         public Guid CustomerId { get; private set; }
         public string IBAN { get; private set; } = string.Empty;
-        public Currency Currency { get; private set; } = Currency.TRY;
+        public Currency Currency { get; private set; }
         public decimal Balance { get; private set; } = 0;
         public Guid TenantId { get; set; }
 
